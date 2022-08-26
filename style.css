@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size:14px;
+}
+
+.Rating_card{
+    background:hsl(213, 19%, 18%);
+    max-width:300px ;
+    min-height: 300px;
+    color:#fff;
+    border-radius: 15px;
+    padding:20px 25px;
+    margin:100px auto;
+    visibility: visible;
+}
+
+.close_box{
+    visibility: hidden;
+}
+
+h1{
+    padding-bottom:20px 0;
+}
+
+p{
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+.icon{
+    background: hsl(217, 12%, 63%);
+    border-radius: 20px;
+    padding:10px;
+    max-width:20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon img{
+    max-width: 100%;
+}
+
+ul{
+    display: flex;
+    margin:0 10px;
+    padding-bottom: 15px;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+    width:30px;
+    margin:0 10px;
+    padding:10px;
+    border-radius: 25px;
+    background: hsl(216, 12%, 54%);
+}
+
+li:hover{
+    background:hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+button{
+    display:flex;
+    justify-content: center;
+    width:300px;
+    padding:10px 15px;
+    margin:15px auto;
+    border-radius: 15px;
+    background: hsl(25, 97%, 53%);
+    color:#fff;
+    border: none;
+}
+
+button:hover{
+    background:hsl(0, 0%, 100%) ;
+    color:hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.Thankyou_card{
+    background:hsl(213, 19%, 18%);
+    max-width:300px ;
+    min-height: 300px;
+    color:#fff;
+    border-radius: 15px;
+    padding:20px 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open_box{
+    top:50%;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.thanksicon{
+    max-width: 200px;
+    margin:25px auto;
+}
+
+.thanksicon img{
+    max-width: 100%;
+    
+}
+
+#orange{
+    width:150px;
+    padding:5px 15px;
+    margin:10px auto;
+    border-radius: 15px;
+    text-align: center;
+    background:hsl(216, 12%, 54%) ;
+    color:hsl(25, 97%, 53%);
+}
